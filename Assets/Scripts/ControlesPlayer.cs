@@ -103,7 +103,7 @@ public class ControlesPlayer : MonoBehaviour
             StartCoroutine(CheckAterrizaje());
         }
 
-        horizontal = Input.GetAxis("Horizontal") * velocidadMovimiento ;
+        horizontal =  velocidadMovimiento ;
         SonidosPaso();
     }
 
