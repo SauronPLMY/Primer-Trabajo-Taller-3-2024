@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 public class DanoEnemigo : MonoBehaviour
 {
-    public int cantidadDeDaño = 10;
+    public int cantidadDeDano = 10;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            VidaPlayer vidaPlayer = other.GetComponent<VidaPlayer>();
+            VidaPlayer vidaPlayer = collision.GetComponent<VidaPlayer>();
 
             if (vidaPlayer != null)
             {
-                vidaPlayer.RecibirDaño(cantidadDeDaño);
+                vidaPlayer.RecibirDaño(cantidadDeDano);
             }
         }
     }

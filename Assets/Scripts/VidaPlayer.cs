@@ -3,24 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DanoEnemigo : MonoBehaviour
-{
-    public int cantidadDeDaño = 10;
-    private VidaPlayer vidaPlayer;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            vidaPlayer = other.GetComponent<VidaPlayer>();
-
-            if (vidaPlayer != null)
-            {
-                vidaPlayer.RecibirDaño(cantidadDeDaño);
-            }
-        }
-    }
-}
 
 public class VidaPlayer : MonoBehaviour
 {

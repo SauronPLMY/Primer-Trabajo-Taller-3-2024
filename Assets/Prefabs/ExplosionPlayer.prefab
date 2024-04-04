@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7488950832632482254}
   - component: {fileID: 4803204138782746443}
   m_Layer: 0
-  m_Name: ExplosionMuere
+  m_Name: ExplosionPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -227,9 +227,9 @@ ParticleSystem:
       maxColor: {r: 0.5566038, g: 0.028880388, b: 0.5219185, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 0, b: 0.81834984, a: 1}
-        key1: {r: 0.43966964, g: 0.06051977, b: 0.754717, a: 1}
-        key2: {r: 0.3490566, g: 0, b: 0.30702204, a: 0}
+        key0: {r: 0, g: 1, b: 0.80679727, a: 1}
+        key1: {r: 0.16642934, g: 0.18434119, b: 0.6415094, a: 1}
+        key2: {r: 0, g: 1, b: 0.39399385, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
@@ -252,7 +252,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_ColorSpace: -1
+        m_ColorSpace: 0
         m_NumColorKeys: 3
         m_NumAlphaKeys: 2
       minGradient:
