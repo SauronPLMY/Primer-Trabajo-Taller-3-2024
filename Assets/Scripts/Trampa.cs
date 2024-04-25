@@ -12,7 +12,8 @@ public class Trampa : MonoBehaviour
         {
             print("lava!");
             //collision.transform.position = CheckPointSystem.instance.UltimaPos;
-            Instantiate(prefabExplosion, posicionExplosion.position, Quaternion.identity);
+            Vector3 pos = collision.transform.position + Vector3.up;
+            Instantiate(prefabExplosion, pos, Quaternion.identity);
             collision.gameObject.SetActive(false);
         }
     }
